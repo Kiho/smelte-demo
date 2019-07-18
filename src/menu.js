@@ -4,7 +4,7 @@ export const menu1 = [
   { to: "/components/text-fields", text: "Text fields", component: components.TextFields },
   { to: "/components/buttons", text: "Buttons", component: components.Buttons },
   { to: "/components/selection-controls", text: "Selection controls", component: components.SelectionControls },
-  { to: "/components/lists", text: "Lists", component: components.TextFields },
+  { to: "/components/lists", text: "Lists", component: components.Lists },
   { to: "/components/selects", text: "Selects", component: components.Selects },
   { to: "/components/snackbars", text: "Snackbars", component: components.Snackbars },
   { to: "/components/dialogs", text: "Dialogs", component: components.Dialogs },

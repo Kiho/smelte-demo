@@ -20,7 +20,7 @@
     showNav,
     showNavMobile,
     breakpoint
-  } from "./stores.js";
+  } from "./stores";
   import AppRouter from './AppRouter.svelte';
   import { menu1, menu2, topMenu } from './menu';
 
