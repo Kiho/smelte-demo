@@ -76,5 +76,4 @@ typings/
 .fusebox/
 .vscode/tasks.json
 
-/public/main.*
-/public/components.*
+public/dist/

@@ -55,7 +55,7 @@ export default {
       //     // style: svelte_preprocess_postcss(),
       //  },
       css: css => {
-        css.write('public/components.css');
+        css.write('public/dist/components.css');
       },
     }),
     resolve({ mainFields: ['svelte', 'module', 'main'] }),
