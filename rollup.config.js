@@ -1,5 +1,4 @@
 import commonjs from 'rollup-plugin-commonjs';
-// import purgeCss from '@fullhuman/postcss-purgecss';
 import livereload from 'rollup-plugin-livereload';
 import postcss from 'rollup-plugin-postcss';
 import resolve from 'rollup-plugin-node-resolve';
@@ -8,14 +7,11 @@ import { terser } from 'rollup-plugin-terser';
 import replace from 'rollup-plugin-replace';
 import { string } from 'rollup-plugin-string';
 import json from 'rollup-plugin-json';
-// import config from "sapper/config/rollup.js";
 import getPreprocessor from 'svelte-preprocess';
 import includePaths from 'rollup-plugin-includepaths';
-// import svelte_preprocess_postcss from 'svelte-preprocess-postcss';
-// import path from "path";
 
-// const production = !process.env.ROLLUP_WATCH;
-const mode = process.env.NODE_ENV || 'development';
+const production = !process.env.ROLLUP_WATCH;
+const mode = production ? 'production' : (process.env.NODE_ENV || 'development');
 const dev = mode === 'development';
 
 console.log('mode', mode);
