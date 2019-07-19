@@ -48,7 +48,7 @@
 {/each}
 
 <AppBar>
-  <a href="." class="px-2 md:px-8 flex items-center">
+  <a href="{basePath}/." class="px-2 md:px-8 flex items-center">
     <img src="{basePath}/logo.png" alt="Smelte logo" width="44" />
     <h6 class="pl-3 text-white tracking-widest font-thin text-lg">SMELTE</h6>
   </a>
