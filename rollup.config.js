@@ -9,6 +9,7 @@ import { string } from 'rollup-plugin-string';
 import json from 'rollup-plugin-json';
 import getPreprocessor from 'svelte-preprocess';
 import includePaths from 'rollup-plugin-includepaths';
+// import path from "path";
 
 const production = !process.env.ROLLUP_WATCH;
 const mode = production ? 'production' : (process.env.NODE_ENV || 'development');
@@ -62,8 +63,8 @@ export default {
       plugins: postcssPlugins(!dev),
     }),
     // postcss({
-    //   plugins: postcssPlugins(!dev),
-    //   extract: path.resolve(__dirname, "./public/static/global.css")
+    //   plugins: require("./postcss.config.js")(!dev),
+    //   extract: path.resolve(__dirname, "./public/dist/global.css")
     // }),
     dev && livereload('public'),
     !dev && terser(),
