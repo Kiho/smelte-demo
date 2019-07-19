@@ -9,4 +9,4 @@ function getBasePath() {
     return basePath;
 }
 
-export { getBasePath };
+export { getBasePath, basePath };

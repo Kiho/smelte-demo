@@ -77,3 +77,4 @@ typings/
 .vscode/tasks.json
 
 public/dist/
+smelte-demo/

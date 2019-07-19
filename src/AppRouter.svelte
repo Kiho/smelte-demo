@@ -4,6 +4,7 @@
   import Navaid from 'navaid';
   import { onDestroy } from 'svelte';
   import { menu1 } from './menu';
+  import { basePath } from './config';
 
 	let Route, params;
 	export let path = '';
@@ -15,7 +16,7 @@
   }
   
   function findComponent(obj) {
-    const key = `/components/${obj ? obj.id : ''}`;
+    const key = `${basePath}/components/${obj ? obj.id : ''}`;
     const item = menu1.find(x => x.to === key);
     if (item) {
       Route = item.component;
@@ -27,11 +28,11 @@
   }
 
 	const router = Navaid('/')
-		.on('/', () => Route = Home)
-		.on('/color', () => Route = Color)
-    .on('/typography', () => Route = Typography)
-    .on('/components', () => findComponent())
-		.on('/components/:id', obj => findComponent(obj))
+		.on(basePath + '/', () => Route = Home)
+		.on(basePath + '/color', () => Route = Color)
+    .on(basePath + '/typography', () => Route = Typography)
+    .on(basePath + '/components', () => findComponent())
+		.on(basePath + '/components/:id', obj => findComponent(obj))
 		.listen();
 
 	onDestroy(router.unlisten);
