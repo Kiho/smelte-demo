@@ -3,10 +3,13 @@
   import { Index } from './routes/components';
   import Navaid from 'navaid';
   import { onDestroy } from 'svelte';
+
+  import Layout from './routes/components/_layout.svelte';
   import { menu1 } from './menu';
   import { basePath } from './config';
 
-	let Route, params;
+  let Route, params;
+  let segment = '';
 	export let path = '';
 
   $: {
@@ -20,6 +23,7 @@
     const item = menu1.find(x => x.to === key);
     if (item) {
       Route = item.component;
+      segment = obj.id;
       // console.log('Route', Route);
     } else {
       Route = Index;
@@ -38,6 +42,6 @@
 	onDestroy(router.unlisten);
 </script>
 
-<div>
+<Layout {segment}>
 	<svelte:component this={Route} {params} />
-</div>
+</Layout>
