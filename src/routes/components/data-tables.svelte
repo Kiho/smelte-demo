@@ -2,13 +2,14 @@
   import DataTable from "components/DataTable";
   import Code from "components/Code";
   import table from "examples/table.txt";
+  import { basePath } from '../../config';
 
   let data = [];
   let loading = true;
 
   async function getData() {
     loading = true;
-    const res = await fetch("/data.json");
+    const res = await fetch(`${basePath}/data.json`);
     const body = await res.json();
 
     data = body._embedded.episodes;
