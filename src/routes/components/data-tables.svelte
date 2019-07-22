@@ -1,6 +1,6 @@
 <script>
   import DataTable from "components/DataTable";
-  import Code from "components/Code";
+  import Code from "../../Code.svelte";
   import table from "examples/table.txt";
   import { basePath } from '../../config';
 

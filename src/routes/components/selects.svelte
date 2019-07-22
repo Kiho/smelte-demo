@@ -1,6 +1,6 @@
 <script>
   import Select from "components/Select";
-  import Code from "components/Code";
+  import Code from "../../Code.svelte";
   import selects from "examples/selects.txt";
 
   let value1 = "";

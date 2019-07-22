@@ -5,7 +5,7 @@
   import Select from "components/Select";
   import Icon from "components/Icon";
   import TextField from "components/TextField";
-  import Code from "components/Code";
+  import Code from "../../Code.svelte";
   import Slider from "components/Slider";
 
   import menus from "examples/menus.txt";

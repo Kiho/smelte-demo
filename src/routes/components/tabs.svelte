@@ -1,6 +1,6 @@
 <script>
   import Tabs, { Tab } from "components/Tabs";
-  import Code from "components/Code";
+  import Code from "../../Code.svelte";
   import Image from "components/Image";
 
   import tabs from "examples/tabs.txt";
