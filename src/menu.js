@@ -20,6 +20,7 @@ export const menu1 = [
   { to: basePath + "/components/images", text: "Images", component: components.Images },
   { to: basePath + "/components/sliders", text: "Sliders", component: components.Sliders },
   { to: basePath + "/components/data-tables", text: "DataTables", component: components.DataTables },
+  { to: basePath + "/components/tooltips", text: "Tooltips", component: components.Tooltips },
 ];
 
 export const menu2 = [
