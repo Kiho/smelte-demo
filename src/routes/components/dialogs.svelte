@@ -1,7 +1,7 @@
 <script>
-  import Dialog from "components/Dialog";
-  import Button from "components/Button";
-  import Code from "../../Code.svelte";
+  import { Dialog } from "smelte";
+  import { Button } from "smelte";
+  import Code from "components/Code";
   import dialog from "examples/dialog.txt";
 
   let showDialog = false;

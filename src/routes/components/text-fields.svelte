@@ -1,6 +1,6 @@
 <script>
-  import TextField from "components/TextField";
-  import Code from "../../Code.svelte";
+  import { TextField } from "smelte";
+  import Code from "components/Code";
 
   import textFields from "examples/text-fields.txt";
 </script>
@@ -19,5 +19,7 @@
 <TextField label="Test label" outlined error="Test error" />
 <h6 class="mb-3 mt-6">Outlined textarea</h6>
 <TextField label="Test label" textarea rows="5" outlined />
+<h6 class="mb-3 mt-6">With basic validation</h6>
+<TextField label="Test label" outlined type="number" min="10" max="100" />
 
 <Code code={textFields} />

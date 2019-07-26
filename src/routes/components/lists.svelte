@@ -1,7 +1,7 @@
 <script>
-  import Code from "../../Code.svelte";
-  import List from "components/List";
-  import Icon from "components/Icon";
+  import Code from "components/Code";
+  import { List } from "smelte";
+  import { Icon } from "smelte";
 
   import lists from "examples/lists.txt";
   import customLists from "examples/custom-lists.txt";

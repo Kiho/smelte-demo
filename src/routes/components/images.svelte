@@ -1,6 +1,6 @@
 <script>
-  import Image from "components/Image";
-  import Code from "../../Code.svelte";
+  import { Image } from "smelte";
+  import Code from "components/Code";
 
   import images from "examples/images.txt";
 

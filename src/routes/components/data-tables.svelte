@@ -1,8 +1,7 @@
 <script>
-  import DataTable from "components/DataTable";
-  import Code from "../../Code.svelte";
+  import { DataTable } from "smelte";
+  import Code from "components/Code";
   import table from "examples/table.txt";
-  import { basePath } from '../../config';
 
   let data = [];
   let loading = true;

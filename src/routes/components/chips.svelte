@@ -1,8 +1,8 @@
 <script>
-  import Chip from "components/Chip";
-  import Snackbar from "components/Snackbar";
-  import Button from "components/Button";
-  import Code from "../../Code.svelte";
+  import { Chip } from "smelte";
+  import { Snackbar } from "smelte";
+  import { Button } from "smelte";
+  import Code from "components/Code";
 
   import chip from "examples/chip.txt";
   import chipOutlined from "examples/chip-outlined.txt";

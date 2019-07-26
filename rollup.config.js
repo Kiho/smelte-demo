@@ -40,7 +40,7 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(mode),
     }),
     string({
-      include: ['**/*.txt', '../smelte/examples/*'],
+      include: ['**/*.txt', '../smelte/examples/*.txt'],
     }),
     json({
       includes: '**./*.json',
